@@ -1,0 +1,2 @@
+defmodule Compass do
+end
