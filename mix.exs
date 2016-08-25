@@ -4,7 +4,7 @@ defmodule Compass.Mixfile do
   def project do
     [
       app: :compass,
-      version: "0.0.2",
+      version: "0.0.3",
       elixir: "~> 1.3",
       build_embedded: Mix.env == :prod,
       start_permanent: Mix.env == :prod,
@@ -34,6 +34,7 @@ defmodule Compass.Mixfile do
   defp deps do
     [
       {:credo, "~> 0.4", only: [:dev, :test]},
+      {:ecto, "~> 2.0"},
       {:ex_doc, "~> 0.13", only: :dev},
       {:orientex, "~> 0.0"},
     ]
